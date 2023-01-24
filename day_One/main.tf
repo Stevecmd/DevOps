@@ -12,8 +12,8 @@ resource "aws_cloudwatch_metric_alarm" "cpu-utilization" {
   statistic                 = "Average"
   threshold                 = "80"
   alarm_description         = "This metric monitors ec2 cpu utilization"
-  alarm_actions             = [ "arn:aws:sns:us-east-1:174286643968:MyCloudWatchTopic" ]
+  alarm_actions             = [ "arn:aws:sns:us-east-1:XXXXXXXXXXXXXXXXXX:MyCloudWatchTopic" ]
 dimensions = {
-    InstanceId = "i-02ac8220c084c0aa4"
+    InstanceId = "i-XXXXXXXXXXXXXXXXX"
   }
 }
