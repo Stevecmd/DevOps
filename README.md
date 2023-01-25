@@ -2,7 +2,8 @@ Terraform to deploy aws resources
 ---
 100 Days of DevOps
 ***
-
+>This should be a fascinating journey! :speak_no_evil:
+>See you on the other side :alien:
 - Day 1 `create CloudWatch alarm`
 - Day 2 `create SNS topic`
 - Day 3 `Log API calls monitored by cloudtrail`
