@@ -1,6 +1,6 @@
-Terraform to deploy aws resources
+Using Terraform to deploy aws resources
 ---
-100 Days of DevOps
+:fire: :fire: 100 Days of DevOps
 ***
 >This should be a fascinating journey! :speak_no_evil:
 >See you on the other side :alien:
