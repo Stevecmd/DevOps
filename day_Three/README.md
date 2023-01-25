@@ -1,4 +1,4 @@
-100 Days of DevOps -Day 3(Introduction to CloudTrail)
+100 Days of DevOps -Day 3 (Introduction to CloudTrail)
 ---
 
 Problem Statement
