@@ -2,6 +2,13 @@ provider "aws" {
   region = "us-east-1"
 }
 
+//creating s3 bucket
+resource "aws_s3_bucket" "<bucketNamehere>" {
+  bucket = "<bucketNamehere>"
+  acl    = "private"
+
+  policy = <<EOF
+
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -27,4 +34,13 @@ provider "aws" {
             }
         }
     ]
+}
+EOF
+}
+
+resource "aws_cloudtrail" "example" {
+  name = "example"
+
+  s3_bucket_name = aws_s3_bucket.bucketnamehere.id
+  is_multi_region_trail = true
 }
