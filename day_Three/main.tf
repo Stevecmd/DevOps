@@ -38,8 +38,8 @@ resource "aws_s3_bucket" "<bucketNamehere>" {
 EOF
 }
 
-resource "aws_cloudtrail" "example" {
-  name = "example"
+resource "aws_cloudtrail" "<example>" {
+  name = "<example>"
 
   s3_bucket_name = aws_s3_bucket.bucketnamehere.id
   is_multi_region_trail = true
