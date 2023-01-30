@@ -11,6 +11,5 @@
 Reference:
 ***
 - [100 days of DevOps](https://devopslearning.medium.com/100-days-of-devops-day-6-cloudwatch-logs-metric-filters-94c572cc241)
-***
+
 - [Youtube tutorial](https://www.youtube.com/watch?v=QgfMCDkVRPA)
-***
