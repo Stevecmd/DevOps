@@ -7,10 +7,11 @@ provider "aws" {
 resource "aws_s3_bucket" "<bucketNamehere>" {
   bucket = "<bucketNamehere>"
   acl    = "private"
+
 // Define S3 bucket with private access control
 
-  policy = <<EOF // Specifying the bucket policy in-line
-{
+// Below: Specifying the bucket policy in-line
+  policy = jsonencode({
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -20,7 +21,6 @@ resource "aws_s3_bucket" "<bucketNamehere>" {
             "Action": "s3:GetBucketAcl",
             "Resource": "arn:aws:s3:::<bucketnamehere>"
         },
-    // Allowing any principal to perform the GetBucketAcl action on the specified resource
         {
             "Sid": "CloudTrailWrite",
             "Effect": "Allow",
@@ -35,16 +35,15 @@ resource "aws_s3_bucket" "<bucketNamehere>" {
                 }
             }
         }
-    // Allowing cloudtrail service to perform the PutObject action on all objects in the specified resource
     ]
-}
-EOF
+  })
 }
 
+// Create an AWS CloudTrail trail
 resource "aws_cloudtrail" "<example>" {
   name = "<example>"
 
-  s3_bucket_name = aws_s3_bucket.bucketnamehere.id
+  s3_bucket_name = "${aws_s3_bucket.bucketnamehere.id}"
   // Specifying the name of the S3 bucket created earlier
   is_multi_region_trail = true
   // Enabling multi-region trail
