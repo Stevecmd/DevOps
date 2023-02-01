@@ -30,4 +30,4 @@
 Reference:
 
 - [100 days of DevOps](https://devopslearning.medium.com/100-days-of-devops-day-7-aws-s3-event-cf64c6699ca1)
-
+>>The link above is the source of the Terraform script in the day_Seven folder
