@@ -10,18 +10,18 @@ This can be achieved through:
 - Terraform
 
 >Types of events for which you can get notified:
-`* [x] PUT
+* [x] PUT
 * [x] POST
 * [x] COPY
 * [x] Multipart upload completed
 * [x] All object create events
-* [x] Objects in RSS lost `
+* [x] Objects in RSS lost 
 
-`* [x] Permanently deleted
+* [x] Permanently deleted
 * [x] Delete marker created
 * [x] All Object delete events
 * [x] Restore from Glacier initiated
-* [x] Restore from Glacier completed`
+* [x] Restore from Glacier completed
 
 ***
 
