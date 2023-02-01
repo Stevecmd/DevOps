@@ -1,3 +1,5 @@
+**<em> Classic Elastic Load Balancer template </em>**
+
 Here's a general outline of the steps to create an internet-facing Classic Elastic Load Balancer 
 with an Auto Scaling Group that provisions and configures Amazon Linux Apache web servers on t2.micro 
 instances using the AWS CLI:
