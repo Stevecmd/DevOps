@@ -4,7 +4,7 @@
 >Problem: Get a notification whenever an object in your S3 bucket is deleted.
 ***
 
-This can be achieved through:
+>This can be achieved through:
 
 - AWS Console
 - Terraform
