@@ -1,6 +1,8 @@
 100 Days of DevOps — Day 7(AWS S3 Event) Notifications
 ---
 
+![S3 Event architecture](https://miro.medium.com/v2/resize:fit:828/format:webp/1*cg5pjr3WhjaeRnDQymQcnQ.png)
+
 >Problem: Get a notification whenever an object in your S3 bucket is deleted.
 ***
 
