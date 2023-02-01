@@ -16,7 +16,7 @@ aws ec2 authorize-security-group-ingress --group-name my-load-balancer-sg --prot
 
 
 > 4. Create a Launch Configuration that installs Apache:
-aws autoscaling create-launch-configuration --launch-configuration-name my-launch-config --image-id ami-0c55b159cbfafe1f0 --instance-type t2.micro --key-name my-key-pair --security-groups my-load-balancer-sg --user-data "#!/bin/bash\n yum install -y httpd24\n service httpd start\n chkconfig httpd on\n echo '<html><body><h1>Hello World</h1></body></html>' > /var/www/html/index.html"
+'''aws autoscaling create-launch-configuration --launch-configuration-name my-launch-config --image-id ami-0c55b159cbfafe1f0 --instance-type t2.micro --key-name my-key-pair --security-groups my-load-balancer-sg --user-data "#!/bin/bash\n yum install -y httpd24\n service httpd start\n chkconfig httpd on\n echo '<html><body><h1>Hello World</h1></body></html>' > /var/www/html/index.html" '''
 
 
 > 5. Create an Auto Scaling Group using the Launch Configuration:
