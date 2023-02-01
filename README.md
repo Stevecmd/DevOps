@@ -5,10 +5,10 @@ Mostly using Terraform and other DevOps tools to deploy aws resources
 
 >This should be a fascinating journey! :speak_no_evil:
 >See you on the other side :alien:
-- Day 1 `create CloudWatch alarm`
-- Day 2 `create SNS topic`
+- Day 1 `Create a CloudWatch alarm`
+- Day 2 `Create an SNS topic`
 - Day 3 `Log API calls monitored by cloudtrail`
 - Day 4 `CloudWatch log agent Installation`
 - Day 5 `CloudWatch to Slack Notification`
 - Day 6 `CloudWatch Logs(Metric Filters)`
-- Day 7 `Day 7(AWS S3 Event)`
+- Day 7 `AWS S3 Event - notifications`
