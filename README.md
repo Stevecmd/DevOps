@@ -14,3 +14,4 @@ Mostly using Terraform and other DevOps tools to deploy aws resources
 - Day 5 `CloudWatch to Slack Notification`
 - Day 6 `CloudWatch Logs(Metric Filters)`
 - Day 7 `AWS S3 Event - notifications`
+- Day 8 `Introduction to AWS Security Token Service(STS)`
