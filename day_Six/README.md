@@ -13,3 +13,9 @@ Reference:
 - [100 days of DevOps](https://devopslearning.medium.com/100-days-of-devops-day-6-cloudwatch-logs-metric-filters-94c572cc241)
 
 - [Youtube tutorial](https://www.youtube.com/watch?v=QgfMCDkVRPA)
+
+***
+NB: 
+- The Python script may need a touch up, I also didnt specify the email address because it will get it from the sns topic which should be created before-hand.
+- I specified the sns details in the Terraform script assuming that the sns topic had not been previously created.
+
